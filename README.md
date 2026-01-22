@@ -22,7 +22,7 @@ Visit [ServerCN](https://servercn.vercel.app/) for more info.
 
 ## 🚀 Getting Started
 
-### 1. Initialize ServerCN in your project
+### Initialize ServerCN in your project
 
 ```bash
 npx servercn init
@@ -42,17 +42,79 @@ npx servercn add error-handler jwt-utils logger-pino logger-winston
 
 ## Components
 
-### 1. file-upload
+- ### API Error Handler
+
+```bash
+npx servercn add error-handler
+```
+
+- ### API Response Formatter
+
+```bash
+npx servercn add response-formatter
+```
+
+- ### Async Handler
+
+```bash
+npx servercn add async-handler
+```
+
+- ### File Upload Cloudinary
 
 ```bash
 npx servercn add file-upload
 ```
 
-### 2. async-handler
+- ### JWT Utils
 
 ```bash
-npx servercn add async-handler
+npx servercn add jwt-utils
 ```
+
+- ### Logger Pino
+
+```bash
+npx servercn add logger-pino
+```
+
+- ### Logger Winston
+
+```bash
+npx servercn add logger-winston
+```
+
+- ### Rate Limiter
+
+```bash
+npx servercn add rate-limiter
+```
+
+- ### Github OAuth
+
+```bash
+npx servercn add github-oauth
+```
+
+- ### Google OAuth
+
+```bash
+npx servercn add google-oauth
+```
+
+- ### Github and Google OAuth
+
+```bash
+npx servercn add github-google-oauth
+```
+
+- ### Health Check
+
+```bash
+npx servercn add health-check
+```
+
+### And more.......
 
 ## 📝 Notes
 
