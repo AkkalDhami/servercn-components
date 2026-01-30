@@ -5,7 +5,7 @@ import { AsyncHandler } from "../../shared/utils/async-handler";
 import {
   CloudinaryUploadResult,
   deleteFileFromCloudinary,
-  uploadToCloudinary
+  uploadToCloudinary,
 } from "./upload.service";
 import { ApiError } from "../../shared/errors/api-error";
 
@@ -17,7 +17,7 @@ export const uploadFile = AsyncHandler(
 
     const file = await uploadToCloudinary(req.file.buffer, {
       folder: "uploads/files",
-      resource_type: "auto"
+      resource_type: "auto",
     });
 
     return ApiResponse.created(res, "File uploaded successfully", file);
@@ -33,9 +33,9 @@ export const uploadMultipleFile = AsyncHandler(
     }
 
     const results: CloudinaryUploadResult[] = await Promise.all(
-      files.map(async file => {
+      files.map(async (file) => {
         return await uploadToCloudinary(file.buffer, {
-          folder: "uploads/images"
+          folder: "uploads/images",
         });
       })
     );
